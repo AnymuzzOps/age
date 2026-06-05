@@ -3,170 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Landing page corporativa para agencia de aduanas, comercio exterior y trazabilidad documental." />
-  <title>Agencia de Aduanas Benjamín Corrales Mira BCM | Comercio exterior y aduanas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Landing page profesional para Agencia de Aduanas BCM, especialistas en comercio exterior, aduanas y logística documental." />
+  <title>Agencia de Aduanas BCM | Comercio exterior y gestión aduanera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header principal fijo -->
-  <header class="site-header" id="header">
-    <nav class="navbar container" aria-label="Navegación principal">
+  <!-- Header superior sticky con navegación principal. -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand__mark" aria-hidden="true">BCM</span>
-        <span class="brand__name">Agencia de Aduanas Benjamín Corrales Mira BCM</span>
+        <span class="brand__primary">BCM</span>
+        <span class="brand__secondary">Agencia de Aduanas</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
 
-      <div class="nav-menu" id="navMenu">
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
         <a href="#quienes-somos">Quiénes Somos</a>
         <a href="#preguntas">Preguntas Frecuentes</a>
         <a href="#contacto">Contacto</a>
-        <a class="btn btn--small btn--primary" href="#trazabilidad">Acceso Clientes</a>
-      </div>
-    </nav>
+        <a class="client-access" href="#trazabilidad">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12h10m0 0-4-4m4 4-4 4"/><path d="M14 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/></svg>
+          Acceso Clientes
+        </a>
+      </nav>
+    </div>
   </header>
 
   <main id="inicio">
-    <!-- Indicadores de referencia -->
-    <section class="market-strip" aria-label="Indicadores informativos">
-      <div class="container market-strip__inner">
-        <article class="indicator">
-          <span class="indicator__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 6.5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </span>
-          <strong>Dólar Aduanero:</strong> $896,03
-        </article>
-        <article class="indicator">
-          <span class="indicator__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16V9m4 7V6m4 10v-4m4 4V8"/></svg>
-          </span>
-          <strong>Valor UF:</strong> $39.758,68
-        </article>
-        <article class="indicator">
-          <span class="indicator__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M19 5a9 9 0 1 0 0 14M5 10h11M5 14h11"/></svg>
-          </span>
-          <strong>Valor Euro:</strong> $1.121,65
-        </article>
+    <!-- Barra de indicadores económicos. -->
+    <section class="indicator-bar" aria-label="Indicadores informativos">
+      <div class="container indicator-bar__grid">
+        <div class="indicator"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M17 7H9.5a3 3 0 0 0 0 6H14a3 3 0 0 1 0 6H6"/></svg><span>Dólar Aduanero: <strong>$896,03</strong></span></div>
+        <div class="indicator"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M6 19V9m6 10V5m6 14v-7"/></svg><span>Valor UF: <strong>$39.758,68</strong></span></div>
+        <div class="indicator"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5a9 9 0 1 0 0 14M5 10h11M5 14h11"/></svg><span>Valor Euro: <strong>$1.121,65</strong></span></div>
       </div>
     </section>
 
-    <!-- Hero corporativo -->
-    <section class="hero">
-      <div class="hero__pattern" aria-hidden="true"></div>
+    <!-- Hero con composición abstracta de buque y contenedores. -->
+    <section class="hero" aria-label="Presentación principal">
+      <div class="hero__visual" aria-hidden="true">
+        <div class="ship ship--one"></div>
+        <div class="ship ship--two"></div>
+        <div class="container-grid"></div>
+      </div>
+      <div class="hero__overlay"></div>
       <div class="container hero__content reveal">
-        <p class="eyebrow">Agencia corporativa de aduanas</p>
-        <h1>Somos sinónimo de <span class="animated-word" id="animatedWord">Confianza</span></h1>
-        <p class="hero__subtitle">Soluciones integrales para importaciones, exportaciones y gestión documental.</p>
+        <p class="hero__kicker">Agencia de Aduanas BCM es sinónimo de...</p>
+        <h1><span id="animatedWord">Confianza</span></h1>
+        <p class="hero__subtitle">Entérate de nuestros servicios y la documentación que necesitas</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#servicios">Quiero saber más</a>
-          <a class="btn btn--outline-light" href="#contacto">Contáctanos</a>
+          <a class="btn btn--light" href="#servicios">Quiero saber más</a>
+          <a class="btn btn--ghost" href="#contacto">Contáctanos</a>
         </div>
       </div>
     </section>
 
-    <!-- Servicios principales -->
-    <section class="section services" id="servicios">
+    <!-- Servicios principales. -->
+    <section class="services section-dark" id="servicios">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Servicios especializados</p>
+        <div class="section-heading section-heading--light reveal">
+          <span>Servicios</span>
           <h2>Nuestros servicios</h2>
-          <p>Acompañamos cada operación con metodología, tecnología y asesoría experta.</p>
         </div>
-
         <div class="services__grid">
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3ZM3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
-            </div>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3ZM3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
             <h3>Asesorías Técnicas</h3>
-            <p>Diagnóstico normativo, clasificación arancelaria y soporte experto para decisiones seguras.</p>
-            <a class="link-button" href="#contacto">Quiero saber más</a>
+            <p>Orientación especializada para procesos aduaneros, documentación y normativa vigente.</p>
+            <a class="service__button" href="#contacto">Quiero saber más</a>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V7h8l4 4v6M8 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM14 7v4h4"/></svg>
-            </div>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17h16M6 17V7h8l4 4v6M8 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM14 7v4h4"/></svg>
             <h3>Importaciones</h3>
-            <p>Gestión documental, internación y coordinación logística para cadenas de suministro eficientes.</p>
-            <a class="link-button" href="#contacto">Quiero saber más</a>
+            <p>Gestión integral para ingreso de mercancías, coordinación y seguimiento documental.</p>
+            <a class="service__button" href="#contacto">Quiero saber más</a>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
-            </div>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
             <h3>Exportaciones</h3>
-            <p>Soluciones ágiles para despacho, certificaciones y salidas internacionales con trazabilidad.</p>
-            <a class="link-button" href="#contacto">Quiero saber más</a>
+            <p>Apoyo en operaciones internacionales, revisión documental y cumplimiento normativo.</p>
+            <a class="service__button" href="#contacto">Quiero saber más</a>
           </article>
-
-          <article class="service-card reveal">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6M8 3h8l4 4v14H4V3h4Zm8 0v5h4"/></svg>
-            </div>
-            <h3>Otros Trámites</h3>
-            <p>Tramitación de destinaciones especiales, seguros, redestinaciones y operaciones terrestres.</p>
-            <a class="link-button" href="#contacto">Quiero saber más</a>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12h6m-6 4h6M8 3h8l4 4v14H4V3h4Zm8 0v5h4"/></svg>
+            <h3>Otros trámites</h3>
+            <p>Soluciones para trámites especiales, logística, seguros y gestiones complementarias.</p>
+            <a class="service__button" href="#contacto">Quiero saber más</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Experiencia y métricas -->
-    <section class="section metrics" id="quienes-somos">
-      <div class="container metrics__inner">
-        <div class="metrics__copy reveal">
-          <p class="eyebrow eyebrow--light">Trayectoria comprobada</p>
+    <!-- Experiencia y contadores. -->
+    <section class="experience" id="quienes-somos">
+      <div class="container reveal">
+        <div class="experience__heading">
           <h2>Más de 30 años</h2>
-          <p>Trabajando en comercio exterior</p>
+          <p>Trabajando en aduanas</p>
         </div>
-        <div class="metrics__grid reveal" aria-label="Métricas de experiencia">
-          <article class="metric-card">
-            <span class="counter" data-target="120000">0</span>
-            <p>Importaciones</p>
-          </article>
-          <article class="metric-card">
-            <span class="counter" data-target="30000">0</span>
-            <p>Exportaciones</p>
-          </article>
-          <article class="metric-card">
-            <span class="counter" data-target="150000">0</span>
-            <p>Trámites</p>
-          </article>
+        <div class="metrics" aria-label="Métricas de trayectoria">
+          <article><strong class="counter" data-target="120000">+0</strong><span>Importaciones</span></article>
+          <article><strong class="counter" data-target="30000">+0</strong><span>Exportaciones</span></article>
+          <article><strong class="counter" data-target="150000">+0</strong><span>Trámites</span></article>
         </div>
       </div>
     </section>
 
-    <!-- Tabla comparativa -->
-    <section class="section comparison">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Valor diferencial</p>
-          <h2>Nos diferenciamos en</h2>
-          <p>Un estándar de servicio diseñado para empresas que necesitan claridad, rapidez y control.</p>
+    <!-- Tabla comparativa. -->
+    <section class="comparison section-white" id="preguntas">
+      <div class="container comparison__layout">
+        <div class="comparison__title reveal">
+          <span>Diferenciales</span>
+          <h2>Nos diferenciamos en:</h2>
         </div>
-
-        <div class="comparison-table reveal" role="table" aria-label="Comparación de servicios">
+        <div class="comparison-table reveal" role="table" aria-label="Comparación de Agencia de Aduanas BCM versus otros proveedores">
           <div class="comparison-row comparison-row--head" role="row">
-            <div role="columnheader">Beneficio</div>
-            <div role="columnheader">Agencia de Aduanas Benjamín Corrales Mira BCM</div>
-            <div role="columnheader">Otros</div>
+            <div role="columnheader">Descripción</div><div role="columnheader">BCM</div><div role="columnheader">Otros</div>
           </div>
           <div class="comparison-row" role="row"><div>Comunicación directa con especialistas</div><div class="check">✓</div><div class="cross">×</div></div>
           <div class="comparison-row" role="row"><div>Atención personalizada</div><div class="check">✓</div><div class="cross">×</div></div>
           <div class="comparison-row" role="row"><div>Experiencia comprobada</div><div class="check">✓</div><div class="cross">×</div></div>
-          <div class="comparison-row" role="row"><div>Facturación rápida</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Expertos en tramitación</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Rápida gestión documental</div><div class="check">✓</div><div class="cross">×</div></div>
           <div class="comparison-row" role="row"><div>Importación y exportación a todo el mundo</div><div class="check">✓</div><div class="cross">×</div></div>
           <div class="comparison-row" role="row"><div>Transporte nacional y logística</div><div class="check">✓</div><div class="cross">×</div></div>
           <div class="comparison-row" role="row"><div>Seguros de carga</div><div class="check">✓</div><div class="cross">×</div></div>
@@ -174,132 +139,84 @@
       </div>
     </section>
 
-    <!-- Trámites asociados -->
-    <section class="section procedures" id="preguntas">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Cobertura integral</p>
-          <h2>Realizamos todo tipo de destinaciones y trámites asociados</h2>
+    <!-- Trámites asociados. -->
+    <section class="procedures">
+      <div class="container reveal">
+        <h2>Realizamos todo tipo de destinaciones aduaneras y trámites asociados, tales como:</h2>
+        <span class="procedures__line" aria-hidden="true"></span>
+        <div class="procedure-list" aria-label="Trámites asociados">
+          <a href="#contacto">Importación</a><a href="#contacto">Exportación</a><a href="#contacto">Exportación de Servicios</a><a href="#contacto">Almacenes Particulares</a><a href="#contacto">Admisiones Temporales</a><a href="#contacto">Salidas Temporales</a><a href="#contacto">Redestinaciones</a><a href="#contacto">Reexportaciones</a><a href="#contacto">Transbordos</a><a href="#contacto">Transporte Terrestre Nacional</a><a href="#contacto">Seguro de Carga Internacional</a>
         </div>
-        <div class="chips reveal" aria-label="Lista de trámites asociados">
-          <span>Importación</span>
-          <span>Exportación</span>
-          <span>Exportación de Servicios</span>
-          <span>Almacenes Particulares</span>
-          <span>Admisiones Temporales</span>
-          <span>Salidas Temporales</span>
-          <span>Redestinaciones</span>
-          <span>Reexportaciones</span>
-          <span>Transbordos</span>
-          <span>Transporte Terrestre Nacional</span>
-          <span>Seguro de Carga Internacional</span>
-        </div>
+        <a class="btn btn--dark" href="#contacto">Contáctanos</a>
       </div>
     </section>
 
-    <!-- Trazabilidad -->
-    <section class="tracking" id="trazabilidad">
-      <div class="container tracking__inner reveal">
-        <div>
-          <p class="eyebrow eyebrow--light">Portal seguro</p>
-          <h2>100% Trazabilidad en línea</h2>
-          <p>Consulta el estado de tus operaciones de forma simple, segura y transparente.</p>
-        </div>
-        <a class="btn btn--white" href="#contacto">Acceso Clientes</a>
+    <!-- Banner de trazabilidad. -->
+    <section class="tracking-banner" id="trazabilidad">
+      <div class="tracking-banner__visual" aria-hidden="true"></div>
+      <div class="tracking-banner__overlay"></div>
+      <div class="container reveal">
+        <h2>100% Trazabilidad en línea</h2>
       </div>
     </section>
 
-    <!-- Carrusel de clientes -->
-    <section class="section clients">
+    <!-- Carrusel de clientes. -->
+    <section class="clients section-dark">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Relaciones de largo plazo</p>
+        <div class="section-heading section-heading--light reveal">
+          <span>Clientes</span>
           <h2>Han confiado en nosotros</h2>
         </div>
-        <div class="carousel reveal" aria-roledescription="carrusel" aria-label="Logos de clientes">
-          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Cliente anterior">‹</button>
+        <div class="carousel reveal" aria-roledescription="carrusel" aria-label="Logos ficticios de clientes">
+          <button class="carousel__button carousel__button--prev" type="button" aria-label="Logo anterior">‹</button>
           <div class="carousel__viewport">
             <div class="carousel__track" id="logoTrack">
-              <div class="logo-card">NORTH<br>LOG</div>
-              <div class="logo-card">PACIFIC<br>TRADE</div>
-              <div class="logo-card">ANDES<br>CARGO</div>
-              <div class="logo-card">BLUEPORT</div>
-              <div class="logo-card">GLOBAL<br>FOODS</div>
-              <div class="logo-card">LATAM<br>INDUSTRY</div>
-              <div class="logo-card">VECTOR<br>MINING</div>
-              <div class="logo-card">AURA<br>TECH</div>
+              <div class="logo-card">AGROSPEC</div><div class="logo-card">ROCK-IT GLOBAL</div><div class="logo-card">IRIA</div><div class="logo-card">IGT</div><div class="logo-card">ENFLEX</div><div class="logo-card">CRYSTAL LAGOONS</div><div class="logo-card">EPIRCO</div><div class="logo-card">GLOBAL TRADE</div>
             </div>
           </div>
-          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Cliente siguiente">›</button>
+          <button class="carousel__button carousel__button--next" type="button" aria-label="Logo siguiente">›</button>
         </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="section contact" id="contacto">
-      <div class="container contact__inner">
-        <div class="contact__copy reveal">
-          <p class="eyebrow">Hablemos de tu operación</p>
-          <h2>Contáctanos</h2>
-          <p>Completa el formulario y un especialista se pondrá en contacto para orientarte con precisión.</p>
-          <div class="contact__info">
-            <span>+56 2 2345 6789</span>
-            <span>contacto@empresa.cl</span>
-            <span>Av. Comercio Exterior 1200, Santiago</span>
-          </div>
-        </div>
-
-        <form class="contact-form reveal" id="contactForm" novalidate>
-          <label>Nombre y Apellido<input type="text" name="name" autocomplete="name" required /></label>
-          <label>Correo Electrónico<input type="email" name="email" autocomplete="email" required /></label>
-          <label>Teléfono<input type="tel" name="phone" autocomplete="tel" required /></label>
-          <label>Nombre de la empresa<input type="text" name="company" autocomplete="organization" required /></label>
-          <label class="contact-form__full">Mensaje<textarea name="message" rows="5" required></textarea></label>
-          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
-          <button class="btn btn--primary contact-form__full" type="submit">Contactar</button>
-        </form>
       </div>
     </section>
   </main>
 
-  <!-- Footer corporativo -->
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <a class="brand brand--footer" href="#inicio">
-          <span class="brand__mark" aria-hidden="true">BCM</span>
-          <span class="brand__name">Agencia de Aduanas Benjamín Corrales Mira BCM</span>
-        </a>
-        <p>Gestión aduanera moderna, confiable y transparente para operaciones de comercio exterior.</p>
-      </div>
-
-      <div>
-        <h3>Links rápidos</h3>
-        <a href="#servicios">Servicios</a>
-        <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#preguntas">Preguntas Frecuentes</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-
-      <div>
-        <h3>Documentos de interés</h3>
-        <a href="#">Certificación Medioambiental</a>
-        <a href="#">Política de Calidad</a>
-        <a href="#">Código de Conducta y Ética</a>
-      </div>
-
-      <div>
-        <h3>Datos de contacto</h3>
-        <p>Teléfono: +56 2 2345 6789</p>
-        <p>Dirección: Av. Comercio Exterior 1200, Santiago</p>
-        <p>Correo: contacto@empresa.cl</p>
-        <div class="socials" aria-label="Redes sociales">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="https://wa.me/56912345678" aria-label="WhatsApp">wa</a>
-        </div>
-      </div>
+  <!-- Footer con documentos, contacto y formulario. -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__top reveal">
+      <a class="brand brand--footer" href="#inicio"><span class="brand__primary">BCM</span><span class="brand__secondary">Agencia de Aduanas</span></a>
+      <div class="partners" aria-label="Partners ficticios"><span>Partners</span><strong>LOGISTIC ALLIANCE</strong><strong>TRADE NETWORK</strong></div>
     </div>
-    <div class="container footer__bottom">Todos los derechos reservados | Agencia de Aduanas Benjamín Corrales Mira BCM ®</div>
+
+    <div class="container footer__main">
+      <section class="footer__info reveal" aria-label="Datos de contacto y documentos">
+        <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l4 4v14H4V3h4Zm8 0v5h4M8 13h8M8 17h8"/></svg>Documentos de interés</h2>
+        <ul>
+          <li><a href="#">Certificación Medioambiental</a></li>
+          <li><a href="#">Política de Calidad</a></li>
+          <li><a href="#">Código de Conducta y Ética</a></li>
+        </ul>
+        <div class="socials"><a href="#" aria-label="LinkedIn">in</a><a href="https://wa.me/56912345678" aria-label="WhatsApp">wa</a></div>
+        <address>
+          <a href="tel:+56226992912">+56 2 2699 2912</a>
+          <span>Bandera 84, Of. 407, Metro U. de Chile, Santiago-Chile.</span>
+          <a href="mailto:contacto@aduanasbcm.cl">contacto@aduanasbcm.cl</a>
+        </address>
+        <p class="copyright">Todos los derechos reservados. | Agencia de Aduanas BCM ®</p>
+      </section>
+
+      <section class="footer__form reveal" aria-label="Formulario de contacto">
+        <h2>Contáctanos</h2>
+        <form id="contactForm" novalidate>
+          <label><span>Nombre y Apellido</span><input type="text" name="name" autocomplete="name" required /></label>
+          <label><span>Correo Electrónico</span><input type="email" name="email" autocomplete="email" required /></label>
+          <label><span>Teléfono</span><input type="tel" name="phone" autocomplete="tel" /></label>
+          <label><span>Nombre de la empresa</span><input type="text" name="company" autocomplete="organization" /></label>
+          <label class="form-full"><span>Mensaje</span><textarea name="message" rows="5" required></textarea></label>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          <button class="form-submit" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 16 8-16 8 3-8-3-8Zm3 8h13"/></svg>Contactar</button>
+        </form>
+      </section>
+    </div>
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/56912345678" aria-label="Contactar por WhatsApp">
