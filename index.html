@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing page corporativa para agencia de aduanas, comercio exterior y trazabilidad documental." />
+  <title>[NOMBRE DE LA EMPRESA] | Comercio exterior y aduanas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header principal fijo -->
+  <header class="site-header" id="header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark" aria-hidden="true">NE</span>
+        <span class="brand__name">[NOMBRE DE LA EMPRESA]</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#servicios">Servicios</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#preguntas">Preguntas Frecuentes</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--small btn--primary" href="#trazabilidad">Acceso Clientes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Indicadores de referencia -->
+    <section class="market-strip" aria-label="Indicadores informativos">
+      <div class="container market-strip__inner">
+        <article class="indicator">
+          <span class="indicator__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 6.5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </span>
+          <strong>Dólar Aduanero:</strong> $896,03
+        </article>
+        <article class="indicator">
+          <span class="indicator__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16V9m4 7V6m4 10v-4m4 4V8"/></svg>
+          </span>
+          <strong>Valor UF:</strong> $39.758,68
+        </article>
+        <article class="indicator">
+          <span class="indicator__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M19 5a9 9 0 1 0 0 14M5 10h11M5 14h11"/></svg>
+          </span>
+          <strong>Valor Euro:</strong> $1.121,65
+        </article>
+      </div>
+    </section>
+
+    <!-- Hero corporativo -->
+    <section class="hero">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="container hero__content reveal">
+        <p class="eyebrow">Agencia corporativa de aduanas</p>
+        <h1>Somos sinónimo de <span class="animated-word" id="animatedWord">Confianza</span></h1>
+        <p class="hero__subtitle">Soluciones integrales para importaciones, exportaciones y gestión documental.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#servicios">Quiero saber más</a>
+          <a class="btn btn--outline-light" href="#contacto">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios principales -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Servicios especializados</p>
+          <h2>Nuestros servicios</h2>
+          <p>Acompañamos cada operación con metodología, tecnología y asesoría experta.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 3 7.5l9 4.5 9-4.5L12 3ZM3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
+            </div>
+            <h3>Asesorías Técnicas</h3>
+            <p>Diagnóstico normativo, clasificación arancelaria y soporte experto para decisiones seguras.</p>
+            <a class="link-button" href="#contacto">Quiero saber más</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 17h16M6 17V7h8l4 4v6M8 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM14 7v4h4"/></svg>
+            </div>
+            <h3>Importaciones</h3>
+            <p>Gestión documental, internación y coordinación logística para cadenas de suministro eficientes.</p>
+            <a class="link-button" href="#contacto">Quiero saber más</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+            </div>
+            <h3>Exportaciones</h3>
+            <p>Soluciones ágiles para despacho, certificaciones y salidas internacionales con trazabilidad.</p>
+            <a class="link-button" href="#contacto">Quiero saber más</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6M8 3h8l4 4v14H4V3h4Zm8 0v5h4"/></svg>
+            </div>
+            <h3>Otros Trámites</h3>
+            <p>Tramitación de destinaciones especiales, seguros, redestinaciones y operaciones terrestres.</p>
+            <a class="link-button" href="#contacto">Quiero saber más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia y métricas -->
+    <section class="section metrics" id="quienes-somos">
+      <div class="container metrics__inner">
+        <div class="metrics__copy reveal">
+          <p class="eyebrow eyebrow--light">Trayectoria comprobada</p>
+          <h2>Más de 30 años</h2>
+          <p>Trabajando en comercio exterior</p>
+        </div>
+        <div class="metrics__grid reveal" aria-label="Métricas de experiencia">
+          <article class="metric-card">
+            <span class="counter" data-target="120000">0</span>
+            <p>Importaciones</p>
+          </article>
+          <article class="metric-card">
+            <span class="counter" data-target="30000">0</span>
+            <p>Exportaciones</p>
+          </article>
+          <article class="metric-card">
+            <span class="counter" data-target="150000">0</span>
+            <p>Trámites</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabla comparativa -->
+    <section class="section comparison">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Valor diferencial</p>
+          <h2>Nos diferenciamos en</h2>
+          <p>Un estándar de servicio diseñado para empresas que necesitan claridad, rapidez y control.</p>
+        </div>
+
+        <div class="comparison-table reveal" role="table" aria-label="Comparación de servicios">
+          <div class="comparison-row comparison-row--head" role="row">
+            <div role="columnheader">Beneficio</div>
+            <div role="columnheader">[NOMBRE DE LA EMPRESA]</div>
+            <div role="columnheader">Otros</div>
+          </div>
+          <div class="comparison-row" role="row"><div>Comunicación directa con especialistas</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Atención personalizada</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Experiencia comprobada</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Facturación rápida</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Importación y exportación a todo el mundo</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Transporte nacional y logística</div><div class="check">✓</div><div class="cross">×</div></div>
+          <div class="comparison-row" role="row"><div>Seguros de carga</div><div class="check">✓</div><div class="cross">×</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trámites asociados -->
+    <section class="section procedures" id="preguntas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Cobertura integral</p>
+          <h2>Realizamos todo tipo de destinaciones y trámites asociados</h2>
+        </div>
+        <div class="chips reveal" aria-label="Lista de trámites asociados">
+          <span>Importación</span>
+          <span>Exportación</span>
+          <span>Exportación de Servicios</span>
+          <span>Almacenes Particulares</span>
+          <span>Admisiones Temporales</span>
+          <span>Salidas Temporales</span>
+          <span>Redestinaciones</span>
+          <span>Reexportaciones</span>
+          <span>Transbordos</span>
+          <span>Transporte Terrestre Nacional</span>
+          <span>Seguro de Carga Internacional</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trazabilidad -->
+    <section class="tracking" id="trazabilidad">
+      <div class="container tracking__inner reveal">
+        <div>
+          <p class="eyebrow eyebrow--light">Portal seguro</p>
+          <h2>100% Trazabilidad en línea</h2>
+          <p>Consulta el estado de tus operaciones de forma simple, segura y transparente.</p>
+        </div>
+        <a class="btn btn--white" href="#contacto">Acceso Clientes</a>
+      </div>
+    </section>
+
+    <!-- Carrusel de clientes -->
+    <section class="section clients">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Relaciones de largo plazo</p>
+          <h2>Han confiado en nosotros</h2>
+        </div>
+        <div class="carousel reveal" aria-roledescription="carrusel" aria-label="Logos de clientes">
+          <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Cliente anterior">‹</button>
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="logoTrack">
+              <div class="logo-card">NORTH<br>LOG</div>
+              <div class="logo-card">PACIFIC<br>TRADE</div>
+              <div class="logo-card">ANDES<br>CARGO</div>
+              <div class="logo-card">BLUEPORT</div>
+              <div class="logo-card">GLOBAL<br>FOODS</div>
+              <div class="logo-card">LATAM<br>INDUSTRY</div>
+              <div class="logo-card">VECTOR<br>MINING</div>
+              <div class="logo-card">AURA<br>TECH</div>
+            </div>
+          </div>
+          <button class="carousel__btn carousel__btn--next" type="button" aria-label="Cliente siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__copy reveal">
+          <p class="eyebrow">Hablemos de tu operación</p>
+          <h2>Contáctanos</h2>
+          <p>Completa el formulario y un especialista se pondrá en contacto para orientarte con precisión.</p>
+          <div class="contact__info">
+            <span>+56 2 2345 6789</span>
+            <span>contacto@empresa.cl</span>
+            <span>Av. Comercio Exterior 1200, Santiago</span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label>Nombre y Apellido<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Correo Electrónico<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Teléfono<input type="tel" name="phone" autocomplete="tel" required /></label>
+          <label>Nombre de la empresa<input type="text" name="company" autocomplete="organization" required /></label>
+          <label class="contact-form__full">Mensaje<textarea name="message" rows="5" required></textarea></label>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          <button class="btn btn--primary contact-form__full" type="submit">Contactar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer corporativo -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="#inicio">
+          <span class="brand__mark" aria-hidden="true">NE</span>
+          <span class="brand__name">[NOMBRE DE LA EMPRESA]</span>
+        </a>
+        <p>Gestión aduanera moderna, confiable y transparente para operaciones de comercio exterior.</p>
+      </div>
+
+      <div>
+        <h3>Links rápidos</h3>
+        <a href="#servicios">Servicios</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#preguntas">Preguntas Frecuentes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h3>Documentos de interés</h3>
+        <a href="#">Certificación Medioambiental</a>
+        <a href="#">Política de Calidad</a>
+        <a href="#">Código de Conducta y Ética</a>
+      </div>
+
+      <div>
+        <h3>Datos de contacto</h3>
+        <p>Teléfono: +56 2 2345 6789</p>
+        <p>Dirección: Av. Comercio Exterior 1200, Santiago</p>
+        <p>Correo: contacto@empresa.cl</p>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="https://wa.me/56912345678" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">Todos los derechos reservados | [NOMBRE DE LA EMPRESA] ®</div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/56912345678" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.8 7l-4.2 1.1 1.1-4.1A8 8 0 1 1 20 11.7Z"/><path d="M8.8 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.4.5c-.1.2-.2.3 0 .6.4.7 1.4 1.9 3 2.6.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5-.1.7-.6 1.7-1.4 1.9-.8.3-2 .1-3.4-.5-2.9-1.3-4.8-3.9-5.1-4.3-.2-.3-1.2-1.6-1.2-3 0-1.3.7-2.1.9-2.4Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
